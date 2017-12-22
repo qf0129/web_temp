@@ -18,13 +18,11 @@ function init_size() {
 
         $(".star_text1,.star_text2").css({"text-align":"center","font-size":"12px"});
         $(".start_user").css({"font-size":"12px"});
-        $(".cup_container").css({"margin":"0"});
 
     }else{
         $('.top_swiper_container').height(h*0.9);
         $('.top_swiper_1').height(h*0.9);
 
-        $(".cup_container").css({"margin":"auto 15%"});
 
     };
     // $('.video_container').height(w).height(w * 758 / 1920);
