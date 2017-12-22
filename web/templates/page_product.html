@@ -1,0 +1,180 @@
+{% extends "base.html" %} {% load i18n %}{% load cms_tags staticfiles tpl_tags%} 
+
+{% block title %}{% translate en='Gululu interactive bottle | product' zh='Gululu互动水杯——产品' zh_hant='Gululu互動水杯——產品'%}{% endblock title %} 
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/page_product.css' %}"> 
+{% endblock css %} 
+
+{% block content %}
+<div class="img_container img_container_1" >
+    <div class="img_float_div img_float_div_right">
+        <p class="text_2 font_dosis_400">{% translate en='Gululu' zh='Gululu水精灵' zh_hant='Gululu水精靈' %}<p/>
+        <p class="text_2 font_dosis_400">{% translate en='Habit Kit' zh='' zh_hant='' %}<p/>
+                <br>
+                <p class="text_1">{% translate en='Make your kids love drinking water through engaging stories and animated pets.' zh='喝水也能成为游戏？在水壶里养精灵，让小朋友爱上喝水' zh_hant='喝水也能成為遊戲？在水壺裏養精靈，讓小朋友愛上喝水' %}</p>
+                <div class="show_video_bg" onclick="show_video('{% get_lang_ %}')"> </div>
+    </div>
+</div>
+<div class="img_container img_container_2">
+    <div class="img_float_div img_float_div_right">
+        <p class="text_1">{% translate en='…Did you know?' zh='…你知道吗?' zh_hant='…你知道嗎？'%}</p>
+        <p class="text_2">{% translate en='Hydration promotes mood and cognition' zh='水摄入量的不足将影响情绪与认知' zh_hant='水攝入量的不足將影響情緒與認知'%}</p>
+        <br>
+        <p class="text_1">{% translate en='Over half of all children are under hydrated. This may result in poor health, cognitive problems, and poor emotional development.' zh='调研发现，有半数以上的儿童都存在着水摄入量不足的问题，他们往往在感到口渴时才喝水。然而缺水将造成各方面身心成长的问题，包括身体发育、情绪和认知发展等，而这些问题却很容易被家长所忽略。' zh_hant='調研發現，有半數以上的兒童都存在著水攝入量不足的問題，他們往往在感到口渴時才喝水。然而缺水將造成各方面身心成長的問題，包括身體發育、情緒和認知發展等，而這些問題卻很容易被家長所忽略。'%}</p>
+        <br>
+        <p class="text_3" onclick="location='/harvard-study-finds-inadequate-hydration-among-u-s-children-2'">{% translate en='Read More →' zh='了解更多 →' zh_hant='瞭解更多→'%}</p>
+    </div>
+</div>
+<div class="img_container img_container_3" >
+    <div class="img_float_div img_float_div_left">
+        <p class="text_1">{% translate en='…What to do about it?' zh='…该怎么做呢?' zh_hant='…該怎麼做呢？'%}</p>
+        <p class="text_2">{% translate en='Learn through play' zh='通过有趣的方式让小朋友主动爱上喝水' zh_hant='通過有趣的管道讓小朋友主動愛上喝水'%}</p>
+        <br>
+        <p class="text_1">{% translate en='The pets in Gululu motivate kids to develop healthy habits on their own. When your child drinks from Gululu Interactive Bottle, the pet grows happier and evolves. This constant interaction both entertains and encourages beneficial habit formation.' zh='每个Gululu里都住着一只神奇的小精灵，他们可以帮助小朋友养成主动喝水的习惯。小朋友只要施展喝水的技能，就能让小精灵变得开心，还可以进化哦。透过持续的互动，小朋友居然在不知不觉中就养成了喝水的好习惯呢！' zh_hant='每個Gululu裏都住著一隻神奇的小精靈，他們可以幫助小朋友養成主動喝水的習慣。小朋友只要施展喝水的技能，就能讓小精靈變得開心，還可以進化哦。透過持續的互動，小朋友居然在不知不覺中就養成了喝水的好習慣呢！'%}</p>
+        <br>
+    </div>
+</div>
+<div class="img_container img_container_4" >
+    <div class="img_float_div img_float_div_right">
+        <p class="text_1">{% translate en='…Is it working?' zh='…这个方法有用吗?' zh_hant='…這個方法有用嗎？'%}</p>
+        <p class="text_2">{% translate en='Watch good habits form' zh='点滴变化，了如指掌' zh_hant='點滴變化，瞭若指掌'%}</p>
+        <br>
+        <p class="text_1">{% translate en='Smart and connected. Gululu can be connected to WiFi through a smart phone. So that you as parents can always know how much your kids drank today. Even remotely!' zh='只要利用智能手机连接WiFi，聪明的Gululu就能将小朋友的饮水数据自动上传到云端，家长就算远距离也能轻轻松松在APP上观察小朋友一整天的喝水状况哦！' zh_hant='只要利用智能手機連接WiFi，聰明的Gululu就能將小朋友的飲水數據自動上傳到雲端，家長就算遠距離也能輕輕鬆松在APP上觀察小朋友一整天的喝水狀況哦！'%}</p>
+        <br>
+        <p class="text_3" onclick="location='https://gululu.helpshift.com/a/gululu/?s=getting-started&f=3-download-the-gululu-app&l={%get_lang%}'">{% translate en='Download →' zh='下载应用 →' zh_hant='下載應用 →'%}</p>
+    </div>
+</div>
+<div class="card_container card_container_1">
+    <div class="title_1">{% translate en='Features That Build Habits' zh='建设好习惯的设计' zh_hant='建設好習慣的設計'%}</div>
+    <div class="title_2">{% translate en='The Habit Loop' zh='习惯养成法' zh_hant='習慣養成法'%}</div>
+    <div class="card_row">
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Gentle reminders' zh='卖萌提醒' zh_hant='賣萌提醒'%}</div>
+            <div class="card_text_2">{% translate en='The pets develop emotions as the kids interact with them. When kids forget to hydrate, their pet feels lonely and sad to gently reminds then to drink water.' zh='小朋友透过喝水和触摸Gululu的互动过程，和小精灵迅速培养感情。当小朋友忘记喝水时，小精灵会感到孤独和悲伤，并提醒小主人：该喝水啦！' zh_hant='小朋友透過喝水和觸摸Gululu的互動過程，和小精靈迅速培養感情。當小朋友忘記喝水時，小精靈會感到孤獨和悲傷，並提醒小主人：該喝水啦！'%}</div>
+        </div>
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Drink together' zh='一起坚持' zh_hant='這是Gululu'%}</div>
+            <div class="card_text_2">{% translate en='When two kids shake their bottles close together, their pets become friends. Friends can compare and compete with their habit score.' zh='在Gululu世界里，只要小朋友们把自己的Gululu靠近摇一摇，小精灵们还可以成为好朋友哦！建立起喝水排行榜，可以进一步鼓励小朋友养成喝水的好习惯。' zh_hant='在Gululu世界裏，只要小朋友們把自己的Gululu靠近搖一搖，小精靈們還可以成為好朋友哦！建立起喝水排行榜，可以進一步鼓勵小朋友養成喝水的好習慣。'%}</div>
+        </div>
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Get rewarded' zh='得到奖励' zh_hant='這是Gululu'%}</div>
+            <div class="card_text_2">{% translate en='The pets grow and explore for treasures when your kid hydrates regularly. Timely rewards are carefully given to encourage healthy habit loops to form.' zh='只要小朋友按时喝水，并随着喝水次数的增多，就可以发现小精灵在成长，还可以获得宝藏，像是有了新的魔法，经历更新奇的探险等…如此一来便大大鼓励了小朋友健康习惯的养成。' zh_hant='只要小朋友按時喝水，並隨著喝水次數的增多，就可以發現小精靈在成長，還可以獲得寶藏，像是有了新的魔法，經歷更新奇的探險等…如此一來便大大鼓勵了小朋友健康習慣的養成。'%}</div>
+        </div>
+    </div>
+</div>
+<div class="card_container card_container_2">
+    <div class="title_1">{% translate en='All Around' zh='全面性的' zh_hant='全面性的'%}</div>
+    <div class="title_2">{% translate en='Kid Proof' zh='儿童友好' zh_hant='兒童友好'%}</div>
+    <div class="card_row">
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Cheating detector' zh='滴水不漏' zh_hant='滴水不漏'%}</div>
+            <div class="card_text_2">{% translate en='Multiple sensors and proprietary algorithms accurately detects how much water is drank. And it’s smart enough to ignore cheating if your kids decides to water the plants instead.' zh='是否会担心小朋友用点小聪明逃过喝水呢？Gululu 的多重传感器能“发现”水去了哪里。将水倒掉是无法召唤小精灵的，聪明的 Gululu 让家长更放心。' zh_hant='是否會擔心小朋友用點小聰明逃過喝水呢？Gululu的多重感測器能“發現”水去了哪裡。將水倒掉是無法召喚小精靈的，聰明的Gululu讓家長更放心。'%}</div>
+        </div>
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Super durable' zh='可靠品质' zh_hant='可靠品質'%}</div>
+            <div class="card_text_2">{% translate en='Duo layered protection for an ultra durable and shock absorbing bottle. And of course, the material is food grade, BPA free, and FDA approved.' zh='双层材料设计使得Gululu有效减震且更加耐用。值得注意的是，Gululu水杯的所有部件都是经过美国FDA认证的食品材料，不含双酚物质，安全环保。' zh_hant='雙層資料設計使得Gululu有效减震且更加耐用。值得注意的是，Gululu水杯的所有部件都是經過美國FDA認證的食品資料，不含雙酚物質，安全環保。'%}</div>
+        </div>
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Never get bored' zh='永远新奇' zh_hant='永遠新奇'%}</div>
+            <div class="card_text_2">{% translate en='Gululu is Wifi connected and it automatically updates itself with new contents over-the-air. So that kids will always have the best and the latest.' zh='Gulului连接了WiFi,可自动通过云端更新内容。这让小朋友们总是有最新的内容体验，保持新鲜新奇感。' zh_hant='Gulului連接了WiFi，可自動通過雲端更新內容。這讓小朋友們總是有最新的內容體驗，保持新鮮新奇感。'%}</div>
+        </div>
+    </div>
+</div>
+<div class="card_container card_container_3">
+    <div class="title_1">{% translate en='Hassle Free Design' zh='无忧无虑' zh_hant='無憂無慮'%}</div>
+    <div class="title_2">{% translate en='Easy to Maintain' zh='轻松保养' zh_hant='輕鬆保養'%}</div>
+    <div class="card_row">
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='No place for bacteria to hide' zh='细菌无处可藏' zh_hant='細菌無處可藏'%}</div>
+            <div class="card_text_2">{% translate en='We thought it was really annoying have unreachable spots in our bottle. So we made ours with detachable spout so that you can easily clean or replace them.' zh='Gululu水杯各部分可完全拆卸，便于清洗或替换。零清洁死角让你不必担心Gululu的卫生问题，可替换部件让Gululu水壶保持常新。' zh_hant='Gululu水杯各部分可完全拆卸，便於清洗或替換。零清潔死角讓你不必擔心Gululu的衛生問題，可替換部件讓Gululu水壺保持常新。'%}</div>
+        </div>
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Safe Charging' zh='安全的充电' zh_hant='安全的充電'%}</div>
+            <div class="card_text_2">{% translate en='No exposed metal, no plugs to plug. Our bottle features a wireless charging cradle. So that all you have to do is drop it in the dock and watch the charging fish recharge itself.' zh='考虑到儿童安全，Gululu水壶采用无线充电，杯体上不含暴露金属和充电插口：只要将Gululu水壶放在无线充电底座上，屏幕中的电池鱼便会显示充电进度。' zh_hant='考慮到兒童安全，Gululu水壺採用無線充電，杯體上不含暴露金屬和充電插口：只要將Gululu水壺放在無線充電底座上，荧幕中的電池魚便會顯示充電進度。'%}</div>
+        </div>
+        <div class="card_div">
+            <div class="card_div_img"></div>
+            <div class="card_text_1">{% translate en='Wash and rinse' zh='清洁和冲洗' zh_hant='清潔和沖洗'%}</div>
+            <div class="card_text_2">{% translate en='Take Gululu for a wash! It is certified IP67 dust and water proof. Meaning that it can be submerged in water within 1 meter for up to 30 minutes.' zh='无忧冲洗/给Gululu水壶勤洗澡吧！经过IP67认证的Gululu可以浸没在1米深的水中长达30分钟。' zh_hant='無憂沖洗/給Gululu水壺勤洗澡吧！經過IP67認證的Gululu可以浸沒在1米深的水中長達30分鐘。'%}</div>
+        </div>
+    </div>
+</div>
+<div class="bottom_img_container">
+    <div class="left_div">
+        <div>
+            <div class="left_div_title">{% translate en='The techy stuff' zh='技术规格' zh_hant='技術規格'%}</div>
+            <div class="left_div_item">{% translate en='Holds 400 mL (13.5oz)' zh='储水容量 400 毫升' zh_hant='儲水容量400毫升'%}</div>
+            <div class="left_div_item">{% translate en='Non-toxic and BPA free' zh='无毒，不含双酚A' zh_hant='無毒，不含雙酚A'%}</div>
+            <div class="left_div_item">{% translate en='Ultra low radiation' zh='超低电磁波' zh_hant='超低電磁波'%}</div>
+            <div class="left_div_item">{% translate en='100% adorable' zh='100% 的可爱' zh_hant='100%的可愛'%}</div>
+        </div>
+    </div>
+    <div class="right_div">
+        <table>
+            <tr>
+                <th>{% translate en='Dimensions' zh='尺寸' zh_hant='尺寸'%}</th>
+                <td>{% translate en='H: 7.87in (20cm)' zh='高: 20 公分' zh_hant='高: 20 公分' %}
+                    <br> {% translate en='Ø: 2.99in (7.6cm)' zh='直径: 7.6 公分' zh_hant='直徑：7.6公分' %}</td>
+            </tr>
+            <tr>
+                <th>{% translate en='Weight' zh='重量' zh_hant='重量'%}</th>
+                <td>{% translate en='0.74lb (335g)' zh='335 克' zh_hant='335克' %}</td>
+            </tr>
+            <tr>
+                <th>{% translate en='Volume' zh='容量' zh_hant='容量'%}</th>
+                <td>{% translate en='13.5oz (400mL)' zh='400 毫升' zh_hant='400毫升' %}</td>
+            </tr>
+            <tr>
+                <th>{% translate en='Material' zh='材质' zh_hant='材質'%}</th>
+                <td>{% translate en='All materials are BPA' zh='所有材质不含双酚A' zh_hant='所有材質不含雙酚A' %}
+                    <br> {% translate en='free and FDA approved' zh='通过美国FDA安全标准认证' zh_hant='通過美國FDA安全標準認證'%}
+                </td>
+            </tr>
+            <tr>
+                <th>{% translate en='Wi-Fi Connection' zh='Wi-Fi 信号' zh_hant='Wi-Fi訊號'%}</th>
+                <td>{% translate en='802.11 b/g/n' zh='802.11 b/g/n' zh_hant='802.11 b/g/n' %}</td>
+            </tr>
+            <tr>
+                <th>{% translate en='Ingress Protection' zh='防水防尘' zh_hant='防水防塵'%}</th>
+                <td>{% translate en='IP 67' zh='IP 67' zh_hant='IP 67' %}</td>
+            </tr>
+            <tr>
+                <th>{% translate en='Battery' zh='电池容量' zh_hant='電池容量'%}</th>
+                <td>{% translate en='950mAh' zh='950mAh' zh_hant='950mAh' %}
+                    <br> {% translate en='2 days of normal use' zh='2 天正常使用' zh_hant='2天正常使用'%}
+                    <br> {% translate en='4 days in standby' zh='4 天待机' zh_hant='4天待機'%}
+                    <br> {% translate en='3 hours to charge' zh='3 小时充满电量' zh_hant='3小時充滿電量'%}
+                </td>
+            </tr>
+            <tr>
+                <th>{% translate en='In-box Items' zh='包装内容 ' zh_hant='包裝內容'%}</th>
+                <td>{% translate en='1x Gululu Bottle' zh='1x Gululu 水杯' zh_hant='1x Gululu水杯' %}
+                    <br> {% translate en='1x Wireless Charging Dock' zh='1x 无线充电座' zh_hant='1x無線充電座' %}
+                    <br> {% translate en='1x Micro USD Cable' zh='1x 充电线' zh_hant='1x充電線' %}
+                </td>
+            </tr>
+            <tr>
+                <th>{% translate en='Certifications' zh='认证' zh_hant='認證'%}</th>
+                <td><img class="certifications"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="video_dialog_container">
+    <div class="video_dialog_close_div" onclick="close_video()">
+        <div class="video_dialog_close_btn">×</div>
+    </div>
+    <video id="video_product" controls autoplay></video>
+</div>
+{% endblock content %} {% block js %}
+<script type="text/javascript" src="{% static 'js/page_product.js' %}"></script>
+{% endblock js %}

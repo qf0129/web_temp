@@ -1,0 +1,32 @@
+{% extends "base.html" %}{% load cms_tags staticfiles tpl_tags%} 
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block meta %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+{% endblock meta %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/page_about_us.css' %}">
+{% endblock css %} 
+
+{% block content %}
+<div class="about_us_container">
+    <div class="about_us_title">
+        <p> {% translate en='OUR VISION' zh='公司介绍' zh_hant='OUR VISION'%} </p>
+    </div>
+    <div class="about_us_content">
+        <p>{% translate en='"Bowhead Technology was founded by a group of like-minded individuals faced with a similar challenge: in the midst of successful professional careers, they wanted better, healthier ways to play and connect with their children. The founders, as well as our entire team at Bowhead Technology, deeply believe that high-quality companionship between a parent and their child is essential to a child’s wellbeing. We want to be a part of that connection. Our dream is that each generation will be healthier and happier than the last, nurtured by their parents’ love and accompanied by innovation in technology that helps children and parents grow together."' zh='巨鲸科技是一家专注于儿童大健康与消费升级领域的智能硬件及互联网服务供应商，Gululu是其打造的第一款产品，开创了陪伴型儿童互动水杯的全新品类。公司由多位合伙人共同出资创办，创始人兼CEO江志强与联合创始人兼CTO蒋镒珍均拥有10亿美金运营经历。初期有世界级IDEO工业设计师深度参与产品设计，现担任顾问；其他成员经验多元并互补, 由人人、百度、惠普、摩托罗拉、英特尔、EA宝开、美国华纳音乐等多元基因组成。' zh_hant='"Bowhead Technology was founded by a group of like-minded individuals faced with a similar challenge: in the midst of successful professional careers, they wanted better, healthier ways to play and connect with their children. The founders, as well as our entire team at Bowhead Technology, deeply believe that high-quality companionship between a parent and their child is essential to a child’s wellbeing. We want to be a part of that connection. Our dream is that each generation will be healthier and happier than the last, nurtured by their parents’ love and accompanied by innovation in technology that helps children and parents grow together."'%}</p>
+
+        <p>{% translate en='' zh='Gululu为美国亚马逊Amazon Exclusive 计划精选200个品牌之一， 目前为富士康与阿里巴巴联合打造的 “淘富成真” 计划的精选赋能项目，法国电信运营商旗下 Orange Fab 扶持的全球精选创业团队，获选2017创新中国的创业大赛 “消费升级” 第一名，也获选 2017戛纳国际创意节 Innovation Lions 的精选创业团队之一。Gululu与美国 Generosity.org合作的慈善义举也受邀参与联合国海洋议题活动。' zh_hant=''%}</p>
+
+        <p>{% translate en='' zh='天使投资人包括：前小米CFO喻铭铎、前人人CFO黄辉、前WPP中国区CEO李倩玲、前56网创始人周娟、金马奖最佳特效得主胡升忠。Pre-A轮融资主要投资方为前阿里巴巴CEO陆兆禧的投资基金与毕加索前女婿 Raphael Lopez Cambill。' zh_hant=''%}</p>
+    </div>
+    <div class="about_us_bottom_img"><img></div>
+</div>
+
+{% endblock content %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'js/page_about_us.js' %}"></script>
+{% endblock js %} 

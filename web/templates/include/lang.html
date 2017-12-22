@@ -1,0 +1,69 @@
+<style type="text/css">
+.lang_container {
+    display: inline-block;
+    font-size: 1rem;
+    min-width: 70px;
+    position: relative;
+    vertical-align: middle;
+    color: #999;
+    background: #fff;
+    padding: 4px 1rem 2px 1rem;
+}
+.lang_container span {
+    color: #777;
+}
+
+.lang_container:before {
+    content: url(/static/img/common_icon_language.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 3px;
+    background-size: 16px 16px;
+}
+
+.lang_container:hover .lang_select {
+    display: block;
+    padding: 0 calc(1rem + 5px);
+}
+
+.lang_select {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 3px #ccc;
+    background: #fff;
+}
+
+.lang_select .lang {
+    min-width: 70px;
+    list-style-type: none;
+    padding: 5px 10px;
+}
+
+.lang_select .lang a {
+    text-decoration: none;
+    color: #999;
+}
+
+.lang_select .lang a:hover {
+    color: #111;
+}
+
+@media (max-width: 767px) {
+    .lang_container:active .lang_select {
+        display: block;
+    }
+    .lang_select {
+        top: 2rem;
+    }
+}
+
+</style>
+{% load staticfiles %}
+<div class="lang_container">
+    <span></span>
+    <ul class="lang_select">
+        {% load menu_tags %} {% language_chooser %}
+    </ul>
+</div>

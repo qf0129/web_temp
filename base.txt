@@ -1,0 +1,30 @@
+aldryn-search>=0.2.12
+coverage>=3.7.1
+dj-database-url
+django-classy-tags
+django-sekizai
+django-treebeard>=2.0
+djangocms-admin-style
+djangocms-helper<0.9.6
+# djangocms_text_ckeditor
+docopt
+flake8
+html5lib<0.99999999
+pyflakes
+selenium
+
+# docs
+sphinx
+sphinx-rtd-theme
+
+sphinxcontrib-spelling
+pyenchant
+
+# Requires 1.0.4+, just running can use earlier versions of aldryn-reversion.
+aldryn-reversion>=1.0.4
+
+# This is the last version to support Django 1.6
+# django-filer>=1.1.1
+
+# Updated version of Aldryn People
+# -e https://github.com/mkoistinen/aldryn-people/archive/feature/update_for_cms33.zip

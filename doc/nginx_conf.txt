@@ -1,0 +1,30 @@
+server {
+        listen 80;
+        server_name gululu.me www.gululu.me admin.gululu.me mygululu.com www.mygululu.com blog.mygululu.com download.mygululu.com;
+
+        gzip on;
+        gzip_buffers 32 4K;
+        gzip_comp_level 6 ;
+        gzip_min_length 4000;
+        gzip_types text/css text/javascript text/xml application/x-javascript image/jpeg image/gif image/png image/svg+xml;
+        gzip_vary on;
+
+        location / {
+                proxy_pass http://127.0.0.1:7777;
+                client_max_body_size 10M;
+                client_body_buffer_size 128k;
+                proxy_redirect off;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                expires 15d;
+        }
+
+        location ~ /(static|media)/ {
+                root /opt/bowhead/WsBowhead/;
+        }
+
+        location /wp_images/ {
+                root /opt/bowhead/;
+        }
+}

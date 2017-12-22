@@ -1,0 +1,55 @@
+{% extends "./base.html" %}
+{% load i18n apphooks_config_tags cms_tags staticfiles thumbnail tpl_tags%}
+
+{% block title %}{{ article.title }} - {{ block.super }}{% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/aldryn_newsblog/article_detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/aldryn_newsblog/article_detail.css' %}">
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/aldryn_newsblog/stylesheet.css' %}"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/aldryn_newsblog/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/aldryn_newsblog/style.css' %}">
+ {% endblock css %}
+
+
+{% block content %}
+<div class="nav_empty"></div>
+
+<div  class="article_detail_root" > 
+
+    {% if article.featured_image_id %}
+    <div class="article_head_img_div">
+        <img src="{% thumbnail article.featured_image 1200x600 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
+    </div>
+    {% endif %}
+
+    <div class="article_title"> <h2><span>{% format_time article.publishing_date '%d %b' %} </span>{{article.title}}</h2></div>
+    <div class="article_title_sub"> 
+        Posted at  {{ article.publishing_date|time }}  {% if article.categories.all %} in {% endif %}
+            {% for category in article.categories.all %}
+                <a href="{% namespace_url 'article-list-by-category' category.slug namespace=namespace default='' %}">{{ category.name }}</a>{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        by <a href="{% namespace_url "article-list-by-author" article.author.slug namespace=namespace default='' %}">{{ article.author.name }}</a>
+    </div>
+
+    <div class="article_content">
+    {% autoescape off %} {{article.lead_in}} {% endautoescape %}
+    </div>
+
+    <div class="article_pager">
+        {% if prev_article %}
+            <a href="{{ prev_article.get_absolute_url }}">↼ PREVIOUS</a>
+        {% else %}
+            <span>NONE</span>
+        {% endif %}
+            <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+            <a href="{% namespace_url "article-list" %}">BACK</a>
+            <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        {% if next_article %}
+            <a href="{{ next_article.get_absolute_url }}">NEXT ⇀</a>
+        {% else %}
+            <span>NONE</span>
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,322 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(/static/font/RlBXAIuiO5GvH9-0-JbBlw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(/static/font/4hYyXH_8WmbBLamf6WjLwg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.font_dosis_200{
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+}
+
+.font_dosis_400{
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+}
+.img_container {
+    height: 1200px;
+    background: #aaa;
+}
+
+.img_float_div {
+    display: inline-block;
+    width: 300px;
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 10px 20px 50px #ccc;
+    border-radius: 3px;
+    padding-top: 100px;
+    margin-top: 5rem;
+    opacity: 0.9;
+}
+
+.img_float_div_left {
+    margin-left: 10%;
+}
+
+.img_float_div_right {
+    float: right;
+    margin-right: 10%;
+}
+
+.img_container_1 .img_float_div {
+    background: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.img_container_1 .show_video_bg {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.img_float_div .text_1 {
+    font-size: 1rem;
+    color: #999;
+}
+
+.img_float_div .text_2 {
+    font-size: 2rem;
+    color: #3d4a9e;
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+}
+
+.img_float_div .text_3 {
+    font-size: 1rem;
+    color: #555;
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+     cursor: pointer;
+     transition: 0.2s color;
+}
+.img_float_div .text_3:hover{
+    color: #999;
+}
+
+.img_container_1 .img_float_div .text_2 {
+    font-weight: bold;
+    color: #5a5a5a;
+    font-size: 2.5rem;
+}
+
+.img_container_1 .img_float_div .text_1 {
+    color: #888;
+    font-size: 1.3rem;
+}
+
+.img_container_1 img {
+    width: 90%;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.card_container {
+    text-align: center;
+    background: #575ab0;
+}
+
+.card_row {
+    padding-top: 3rem;
+}
+
+.card_container .title_1 {
+    display: inline-block;
+    color: #eee;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
+.card_container .title_2 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding-top: 20px;
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+}
+
+.card_div {
+    display: inline-block;
+    width: 30%;
+    max-width: 400px;
+    margin: 0 1%;
+    vertical-align: top;
+}
+
+.card_div .card_div_img {
+    width: 100%;
+}
+
+.card_div .card_text_1 {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 1.5rem;
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+}
+
+.card_div .card_text_2 {
+    color: #ddd;
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.5rem;
+    padding: 0 1.5rem;
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+}
+
+.bottom_img_container {
+    width: 100%;
+    background: red;
+    text-align: center;
+    background: #575ab0;
+    color: #eee;
+    font-size: 0.9rem;
+}
+
+.bottom_img_container>div {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.bottom_img_container .left_div {
+    vertical-align: top;
+    text-align: center;
+}
+
+.bottom_img_container .left_div>div {
+    display: inline-block;
+    text-align: left;
+}
+
+.bottom_img_container .left_div_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+     font-family:'Dosis', sans-serif;
+     font-weight: 400;
+}
+
+.bottom_img_container .left_div_item {
+    display: block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.bottom_img_container .left_div_item:before {
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
+.bottom_img_container .left_div_item:nth-child(2):before {
+    content: url(/static/img/product_icon_1.svg);
+    vertical-align: middle;
+}
+
+.bottom_img_container .left_div_item:nth-child(3):before {
+    content: url(/static/img/product_icon_2.svg);
+}
+
+.bottom_img_container .left_div_item:nth-child(4):before {
+    content: url(/static/img/product_icon_3.svg);
+}
+
+.bottom_img_container .left_div_item:nth-child(5):before {
+    content: url(/static/img/product_icon_4.svg);
+}
+
+.bottom_img_container .right_div table {
+    display: inline-block;
+}
+
+.bottom_img_container .right_div table th {
+    text-align: right;
+    vertical-align: top;
+    line-height: 2rem;
+    color: #fff;
+}
+
+.bottom_img_container .right_div table td {
+    text-align: left;
+    vertical-align: top;
+    padding-left: 20px;
+    line-height: 2rem;
+}
+
+.bottom_img_container .certifications {
+    width: 100%;
+}
+
+.video_dialog_container {
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    text-align: center;
+}
+
+.video_dialog_container video {
+    background: #000;
+    width: 50%;
+    border-radius: 2px;
+    box-shadow: 10px 10px 40px #666;
+}
+
+.video_dialog_close_div {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+
+.video_dialog_close_btn {
+    text-align: center;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #333;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+
+.video_dialog_close_btn:hover {
+    background: #fff;
+    opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+    .img_float_div {
+        width: 80%;
+    }
+    .img_float_div_left {
+        margin-left: 5%;
+    }
+    .img_float_div_right {
+        margin-right: 5%;
+    }
+    .bottom_img_container .right_div {
+        margin-top: 1rem;
+    }
+    .card_div {
+        width: 80%;
+        margin-top: 50px;
+    }
+    .bottom_img_container>div {
+        width: 90%;
+    }
+    .bottom_img_container .left_div_item {
+        display: none;
+    }
+    .bottom_img_container .left_div_title {
+        margin: 0 0;
+    }
+    .video_dialog_container video {
+        width: 80%;
+    }
+    .video_dialog_close_div {
+        width: 80%;
+    }
+    .img_container_1 .show_video_bg {
+        margin-top: 1rem;
+    }
+}

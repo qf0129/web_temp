@@ -1,0 +1,36 @@
+<style type="text/css">
+.menu_right_container {
+    display: block;
+}
+.btn_shop{
+    color: #fff ;
+    border-radius: 30px !important;
+    object-fit: contain;
+    background-color: #ffcf62 !important;
+    background-image: linear-gradient(to top,#FFC43D 0,#FFDC5A 100%); 
+    background-repeat: repeat-x;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    border: solid 2px #ffffff;
+    font-weight: 600;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 767px){
+.btn_shop{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 20px !important;
+}
+}
+{% load tpl_tags%}
+</style>
+<div class="menu_right_container">
+<div class="btn_shop" onclick="window.open('/shop','_blank')">{% translate en='SHOP' zh='商店' zh_hant='商店'%}</div>
+</div>

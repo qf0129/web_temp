@@ -1,0 +1,121 @@
+{% extends "base.html" %} {% load cms_tags staticfiles tpl_tags%} 
+{% block title %}{% translate en='Gululu- The safe, fun and interactive companion for children that encourages healthy drinking habits!' zh='Gululu水精灵--来自美国的儿童陪伴型互动水杯，让孩子养成健康饮水好习惯！' zh_hant='Gululu水精靈--來自美國的兒童陪伴型互動水杯，讓孩子養成健康飲水好習慣！'%}{% endblock title %} 
+
+{% block css %}
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/page_home.css' %}?v=1">
+<link rel="stylesheet" type="text/css" href="{% static 'lib/swiper.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'lib/animate.css' %}">
+{% endblock css %} 
+
+{% block content %}
+<div class="top_container">
+    <div class="top_img_div">
+        <div class="top_text">
+            <h2>{% translate en='Gululu水精灵' zh='Gululu水精灵' zh_hant='Gululu水精靈'%}</h2>
+            <p>{% translate en='来自美国的儿童陪伴型互动水杯，<br>让孩子养成健康饮水好习惯！' zh='来自美国的儿童陪伴型互动水杯，<br>让孩子养成健康饮水好习惯！' zh_hant='來自美國的兒童陪伴型互動水杯，<br>讓孩子養成健康飲水好習慣！'%}</p>
+            <div class="top_btn_mobile">
+                <a class="top_btn_more" href="/product">了解更多&gt;</a>&nbsp;&nbsp;
+                <a class="top_btn_shop" target="_blank" href="/shop">{% translate en='立刻购买' zh='立刻购买' zh_hant='立刻購買'%}&gt;</a>
+            </div>
+        </div>
+        <img class="top_gululu_talk">
+        <img class="top_hao_are_you">
+        <img class="top_awesome">
+        <img class="top_cup">
+        <div class="top_btn">
+            <a class="top_btn_more" href="/product">了解更多</a>&nbsp;&nbsp;
+            <a class="top_btn_shop" target="_blank" href="/shop">{% translate en='立刻购买' zh='立刻购买' zh_hant='立刻購買'%}</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- <div class="top_swiper_container swiper-container">
+    <div class="top_swiper_wrapper swiper-wrapper">
+        <div class="swiper-slide top_swiper_slide_1">
+            <div class="top_swiper_text top_swiper_text_1">
+                <p class="text_1 font_dosis_400">{% translate en='Meet Gululu' zh='这是Gululu' zh_hant='這是Gululu'%}</p>
+                <p class="text_2">{% translate en='The interactive bottle that' zh='帮你养成主动饮水' zh_hant='幫你養成主動飲水'%}</p>
+                <p class="text_2">{% translate en='keeps kids hydrated' zh='好习惯的好伙伴' zh_hant='好習慣的好夥伴'%}</p>
+                <div class="text_btn_group">
+                    <div class="discover_btn font_dosis_400" onclick="location='/product'">{% translate en='DISCOVER' zh='发现' zh_hant='發現'%}</div>
+                    <div class="watch_btn font_dosis_400" onclick="location='#video_container'">{% translate en='WATCH VIDEO' zh='观看视频' zh_hant='觀看視頻'%}</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide top_swiper_slide_2">
+            <div class="top_swiper_text top_swiper_text_2">
+                <p class="text_1 font_dosis_400">{% translate en='Meet Gululu' zh='这是Gululu' zh_hant='這是Gululu'%}</p>
+                <p class="text_2">{% translate en='A hydration habit kit that' zh='Gululu水精灵' zh_hant='Gululu水精靈'%}</p>
+                <p class="text_2">{% translate en='makes your kid love drinking water' zh='改善小朋友的饮水习惯' zh_hant='改善小朋友的飲水習慣'%}</p>
+                <div class="text_btn_group">
+                    <div class="discover_btn font_dosis_400" onclick="location='/product'">{% translate en='DISCOVER' zh='发现' zh_hant='發現'%}</div>
+                    <div class="watch_btn font_dosis_400" onclick="location='#video_container'">{% translate en='WATCH VIDEO' zh='观看视频' zh_hant='觀看視頻'%}</div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>-->
+<div class="slide_page">
+    <div class="video_container" id="video_container">
+        <div class="video_row">
+            <div class="video_div" onclick="show_video(1, '{% get_lang_ %}')"><div class="video_bg_1"></div></div>
+            <div class="video_div" onclick="show_video(2, '{% get_lang_ %}')"><div class="video_bg_2"></div></div>
+        </div>
+    </div>
+    <div class="show_container">
+        <div class="show_txt_div">
+            <p class="text_1 font_dosis">{% translate en='We are on a mission to…' zh='我们的愿景：' zh_hant='我們的願景：'%}</p>
+            <p class="text_2 font_dosis_200">{% translate en='Develop Good Habits' zh='习惯养成' zh_hant='習慣養成'%}</p>
+            <p class="text_1">{% translate en='Gululu helps kids stay healthy and build great habits that will last for a life time. This bottle does both of these things by measuring and rewarding healthy hydration habits.' zh='Gululu 帮助小朋友养成身心健康成长的终生好习惯。水精灵通过陪伴和激励，达到健康饮水习惯的养成。' zh_hant='Gululu幫助小朋友養成身心健康成長的終生好習慣。水精靈通過陪伴和激勵，達到健康飲水習慣的養成。'%}</p>
+            <br>
+            <p class="text_3 font_dosis_200" onclick="location='/product'">{% translate en='Get Started' zh='开始' zh_hant='開始'%} →</p>
+        </div>
+    </div>
+    <div class="comment_container">
+        <div class="comment_swiper_container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="comment_wrapper">
+                        <div class="comment_content">
+                            {% translate en='"My kid is definitely drinking more now. She takes her Gululu to school too, and her teacher gives her a sticker at the end of class if she reaches the flag"' zh='“我的孩子现在肯定比以前喝水喝得多了。她把Gululu带去学校，老师会在她一天结束时达到旗帜目标，就奖励她贴纸”' zh_hant='“我的孩子現在肯定比以前喝水喝得多了。她把Gululu帶去學校，老師會在她一天結束時達到旗幟目標，就獎勵她貼紙”'%}
+                        </div>
+                        <div class="comment_user">Kelly R, Scotland</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="comment_wrapper">
+                        <div class="comment_content">
+                            {% translate en='“This is a dream come true for me (and my daughter). It will help motivate her to remember to actually drink her water, plus it’s made for kids, so durable! ”' zh='“为我和我的女儿终于梦想成真了！这将有助于激励她记住主动饮水，加上它专为孩子设计，所以特别耐用! ”' zh_hant='“爲我和我的女兒終於夢想成真了！這將有助於激勵他記住主動喝水，加上它專爲孩子設計，所以特別耐用! ”'%} ❤️
+                        </div>
+                        <div class="comment_user">Lisa B, California</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="comment_wrapper">
+                        <div class="comment_content">
+                            {% translate en='“...it’s one of the most high-tech water bottles out there, but also perhaps the most effective.”' zh='“...是水杯界中最高科技的水杯，可是也是最有效的。“' zh_hant='“...是水杯界中最高科技的水杯，可是也是最有效的。“'%}
+                        </div>
+                        <div class="comment_user"><a href="https://www.yahoo.com/tech/gululu-interactive-water-bottle-wants-151046971.html">YAHOO TECH</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_swiper_pagination swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<div class="video_dialog_container">
+    <div class="video_dialog_close_div" onclick="close_video()" >
+        <div class="video_dialog_close_btn">×</div>
+    </div>
+    <video id="video_1" controls autoplay></video>
+    <video id="video_2" controls autoplay></video>
+</div>
+
+{% endblock content %} {% block js %}
+<!-- <script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script> -->
+<script type="text/javascript" src="{% static 'lib/swiper.jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/page_home.js' %}?v=1"></script>
+{% endblock js %}

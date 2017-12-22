@@ -1,0 +1,33 @@
+.privacy_container {
+    width: 90%;
+    max-width: 1400px;
+    margin:0 auto;
+    padding-bottom: 3rem;
+}
+
+.main_title_container {
+    color: #3d4a9e;
+    font-size: 64px;
+    font-weight: bold;
+    padding-top: 100px;
+    line-height: 1.25em;
+}
+
+.body_container {
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.body_container a {
+    color: #3d4a9e;
+    text-decoration: none;
+}
+
+.sub_title_container {
+    color: #3d4a9e;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.375em;
+}

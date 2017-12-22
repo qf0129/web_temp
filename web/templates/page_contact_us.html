@@ -1,0 +1,97 @@
+{% extends "base.html" %} {% load cms_tags staticfiles tpl_tags %} 
+{% block title %}{% page_attribute "page_title" %}{% endblock title %} 
+
+{% block meta %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+{% endblock meta %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/page_contact_us.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div style="width: 90%;max-width:1400px;margin:0 auto;">
+
+<div class="main_container">
+
+    <div class="title_container">
+        <p> {% translate en='SAY HELLO' zh='SAY HELLO' zh_hant='SAY HELLO'%} </p>
+    </div>
+
+    <div class="detail_container">
+
+        <div class="content_container">
+            <div class="icon_container customer_icon"> </div>
+
+            <p> &nbsp; </p>
+
+            <div class="sub_title_container">
+                 {% translate en='CUSTOMER SERVICE' zh='客户服务' zh_hant='客戶服務'%} 
+            </div>
+
+            <div class="sub_content_container">
+                 {% translate en='For inquiries related to' zh='有关的查询' zh_hant='有關的查詢'%} 
+                <br>
+                
+                 {% translate en='the product or other help,' zh='产品或其他帮助，' zh_hant='產品或其他幫助，'%} 
+                <br>
+                 {% translate en='please contact our Customer Service' zh='请联系我们的客户服务部门' zh_hant='請聯繫我們的客戶服務部門'%} 
+                 {% translate en='Division as follow:' zh='' zh_hant=''%} 
+                <br>
+                <a href="customer-service@bowhead-tech.com"> customer-service@bowhead-tech.com </a>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="icon_container marketing_icon"> </div>
+
+            <p> &nbsp; </p>
+
+            <div class="sub_title_container">
+
+                <p>{% translate en='MARKETING & PARTNERSHIP' zh='营销与合作' zh_hant='營銷與合作'%}  </p>
+            </div>
+
+            <div class="sub_content_container">
+                 {% translate en='If you are searching for partnerships' zh='如果你正在寻找合作伙伴' zh_hant='如果你正在尋找合作伙伴'%} 
+                <br>
+                 {% translate en='or you have other enterprise inquiries,' zh='或者你有其他的企业咨询，' zh_hant='或者你有其他的企業諮詢，'%} 
+                <br>
+                 {% translate en='please contact our' zh='请联系' zh_hant='請聯繫'%} 
+                 {% translate en='Marketing and Partnerships Division as follow:' zh='' zh_hant=''%} 
+                <br>
+                <a href="partnership@bowhead-tech.com"> partnership@bowhead-tech.com </a>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="icon_container opportunity_icon"> </div>
+
+            <p> &nbsp; </p>
+
+            <div class="sub_title_container">
+                <p>{% translate en=' JOB OPPORTUNITIES' zh='工作机会' zh_hant='工作機會'%}  </p>
+            </div>
+
+            <div class="sub_content_container">
+                 {% translate en='For inquiries related to careers,' zh='有关职业的询问，' zh_hant='有關職業的詢問，'%} 
+                <br>
+                 {% translate en='please contact us as follow:' zh='请联系' zh_hant='請聯繫'%} 
+                <br>
+                <a href="careers@bowhead-tech.com"> careers@bowhead-tech.com </a>
+            </div>
+        </div>
+
+        <!-- <div style="background: #f1f1f1;text-align: center;padding: 30px 0;margin-top: 50px;">
+            <p style="font-size: 26px; color: #3d4a9e;">400-820-3195</p>
+            <p style="font-size: 16px; color: #999;margin-top: 20px">联系地址： 上海市徐汇区复兴中路1237号3楼</p>
+        </div> -->
+    </div>
+</div>
+
+</div>
+{% endblock content %}
+{% block js %}
+<script type="text/javascript" src="{% static 'js/page_contact_us.js' %}"></script>
+{% endblock js %}

@@ -1,0 +1,77 @@
+<style type="text/css">
+.footer_bar_container{
+    width: 100%;
+    background: #ddd;
+    text-align: center;
+    display: inline-block;
+}
+.footer_bar_container .footer_bar_wrapper{
+    width: 33%;
+    display: inline-block;
+    margin: auto 0;
+    overflow: hidden;
+    padding: 50px 0;
+    vertical-align: middle;
+}
+.footer_bar_link_group a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #777;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.footer_bar_container input{
+    background: #fff;
+    border: 1px solid #21ad8a;
+    border-radius: 16px;
+    font-size: 1rem;
+    color: #999;
+    padding: 5px 10px;
+    outline:none;
+}
+.footer_bar_bottom_wrapper{
+    font-size: 0.9rem;
+    color: #999;
+    padding:10px 0;
+}
+
+.lang_bar {
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .footer_bar_container .footer_bar_wrapper{
+        width: 100%;
+        padding: 0 0;
+    }
+    .footer_bar_container input{
+        margin-top: 20px;
+    }
+}
+
+</style>
+{% load tpl_tags %}
+<div class="footer_bar_container">
+    <div class="footer_bar_top_wrapper">
+        <div class="footer_bar_wrapper">
+            <!-- <input type="text"> -->
+        </div>
+        <div class="footer_bar_wrapper">
+                <img class="footer_logo" src="/static/img/common_logo_2.svg">
+        </div>
+        <div class="footer_bar_wrapper">
+            <div class="footer_bar_link_group">
+                <div class="lang_bar"> {% include 'include/lang.html' %} </div>
+                <a href="/about-us">{% translate en='About Us' zh='关于我们' zh_hant='關於我們'%}</a>
+                <a href="/contact-us">{% translate en='Contact Us' zh='联系我们' zh_hant='聯繫我們'%}</a>
+                <a href="/privacy-policy">{% translate en='Privacy Policy' zh='隐私政策' zh_hant='隱私政策'%}</a>
+                <a href="/admin">{% translate en='Log In' zh='账户登入' zh_hant='帳戶登入'%}</a>
+                <a href="http://www.miitbeian.gov.cn">{% translate en='' zh='沪ICP备15048254' zh_hant='沪ICP備15048254'%}</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bar_bottom_wrapper">
+        {% translate en='Copyright © 2016 Bowhead Technology Inc. All rights reserved.' zh='Gululu™ 为注册商标， 所有权归巨鲸网络科技（上海）有限公司 ' zh_hant='Gululu™ 爲註冊商標， 所有權歸巨鯨網絡科技（上海）有限公司'%}
+    </div>
+</div>

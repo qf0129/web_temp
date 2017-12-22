@@ -1,0 +1,46 @@
+{% load cms_tags menu_tags tpl_tags sekizai_tags staticfiles%}
+<!doctype html>
+<html>
+
+<head>
+    <title>{% block title %}Gululu{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% block meta %}{% endblock meta %}
+    <meta name="description" content="{% translate en='Gululu  is an interactive bottle focuses on children’s macro health. Gululu helps children developing a good habit of drinking water proactively by unique created contents and interesting stories.' zh='Gululu水精灵是一款注重儿童大健康的互动水杯。通过独创的内容和有趣的故事，鼓励孩子养成主动喝水的好习惯。' zh_hant='Gululu水精靈是壹款註重兒童大健康的互動水杯。通過獨創的內容和有趣的故事，鼓勵孩子養成主動喝水的好習慣。'%}">
+    <meta name="keywords" content="{% translate en='gululu|gululu interactive bottle|intelligent bottle|interactive bottle|intelligent cup|interactive cup|gift|holiday gift|send gift|gululu water elf|intelligent hardware|intelligent toy|parent-child interaction|macro health|children’s health|habit formation|habit cultivation' zh='gululu|gululu互动水杯|智能水杯|互动水杯|智能水壶|互动水壶|礼品|节日礼品|送礼|gululu水精灵|智能硬件|智能玩具|亲子互动|大健康|儿童健康|习惯培养|习惯养成' zh_hant='gululu|gululu互動水杯|智能水杯|互動水杯|智能水壺|互動水壺|禮品|節日禮品|送禮|gululu水精靈|智能硬件|智能玩具|親子互動|大健康|兒童健康|習慣培養|習慣養成'%}">
+    {% include "include/bd.html" %}
+    {% include "include/gtm_head.html" %}
+    {% include "include/ga.html" %}
+    {% include "include/pixel.html" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="shortcut icon" href="/static/img/favicon.png" /> 
+    {% render_block "css" %} 
+    {% block css %}{% endblock css %}
+</head>
+
+<body>
+    {% include "include/gtm.html" %}
+    {% cms_toolbar %}
+    <div class="root_container">
+        <div class="root_nav_bar">
+            {% include 'include/nav_en.html' %}
+        </div>
+        <div class="root_content_bar">
+            {% block content %}{% endblock content %}
+        </div>
+        <div class="root_footer_bar">
+            {% include "include/footer_en.html" %}
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'lib/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/base_en.js' %}"></script>
+        <script type="text/javascript">
+            if ('{% get_lang %}' != 'en') {
+                    $('.menu_container li').eq(-1).remove();
+            }
+        </script>
+    {% render_block "js" %} 
+    {% block js %}{% endblock js %}
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+Step 1 - Deploy project :
+    $ apt-get install virtualenv python3-dev libfreetype6-dev libjpeg8-dev zlib1g-dev libwebp-dev python3-dev
+    $ git clone https://github.com/ethan-jiang-1/WsBowhead.git
+    $ cd WsBowhead
+    $ mkdir logs
+    $ virtualenv venv -p python3
+    $ source env/bin/activate
+    $ pip install --upgrade pip
+    $ pip install -r requirements.txt
+
+Step ２ - Configure Mysql:
+    - Install mysql
+            $ sudo apt-get install mysql-server
+    - Create db and user
+            $ ./scripts/deplay_mysql.sh PASSWORD_of_root_in_mysql
+    - Update data from server
+            $ ./scripts/db_update.sh
+
+Step ３ - Configure Nginx:
+    - Install nginx
+            $ sudo apt-get install nginx
+    - Copy the nginx conf file :
+            $ sudo cp doc/nginx_conf.txt /etc/nginx/site-enabled/wsbowhead
+
+Step 4 - Collect Staticfiles:
+    $ ./manage.py collectstatic
+    
+Step 5 - Start server:
+    - Start server 
+            $ ./manage.py runserver   #localhost server  , http://127.0.0.1:8000
+            # or 
+            $ ./wsbowhead.sh start    # start / stop /restart  , http://127.0.0.1:7777(http://mygululu.com)

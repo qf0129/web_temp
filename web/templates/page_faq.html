@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% load cms_tags staticfiles tpl_tags%} 
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block meta %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+{% endblock meta %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/page_faq.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="base_container">
+    <iframe  src="http://gululu.helpshift.com/a/gululu/?l={% get_lang %}"> </iframe>
+</div>
+{% endblock content %}

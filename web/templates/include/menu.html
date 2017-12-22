@@ -1,0 +1,70 @@
+<style type="text/css">
+.menu_container {
+    display: inline-block;
+    padding-left: 0;
+    margin: 0 auto;
+    vertical-align: middle;
+    font-size: 1.1rem;
+}
+
+.menu_container .child {
+    list-style-type: none;
+}
+
+.menu_container .child a {
+    transition: color 0.5s;
+    text-decoration: none;
+    color: #888;
+}
+.menu_container .child a:hover {
+    color: #333;
+}
+
+.menu_container > .child {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.menu_container > .child a {
+    text-decoration: none;
+}
+
+.menu_container > .child.selected {
+    /*border-bottom: 3px solid #48b2e7;*/
+}
+
+.menu_container > .child:hover > ul {
+    display: block;
+}
+
+.menu_container > .child > ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    text-align: left;
+    box-shadow: 0 0 5px #ddd;
+    padding: 5px 20px;
+    margin-top: 5px;
+}
+
+.menu_container > .child > ul a:hover {
+    color: #48b2e7;
+}
+
+.menu_container > .child > ul > li >a {
+    display: block;
+    margin: 5px 50px 5px 5px;
+}
+
+.menu_container > .child > ul > li >ul >li >a {
+    display: block;
+    padding-left: 30px;
+}
+</style>
+{% load menu_tags %}
+<ul class="menu_container">
+    {% show_menu 0 100 0 1 %}
+</ul>
+
+

@@ -1,0 +1,32 @@
+body{
+    background-color: #e6e6e6;
+}
+
+.about_us_container{
+    width: 90%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.about_us_title{
+    color: #2e358d;
+    font-size: 3rem;
+    padding-top: 100px;
+}
+
+.about_us_content {    
+    padding-top: 20px;
+    line-height: 30px;
+    color: #6e6e6e;
+}
+
+.about_us_bottom_img{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.about_us_bottom_img img{
+    width: 100%;
+    max-width: 1024px;
+}

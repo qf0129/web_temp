@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Water Volume</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.4" offset="5%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="20%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="80%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.02" offset="95.0255322%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.04" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Product" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-177.000000, -6159.000000)" id="Features">
+            <g transform="translate(175.000000, 6159.000000)">
+                <g id="Volume" filter="url(#filter-3)" transform="translate(2.000000, 0.000000)">
+                    <path d="M45.5692308,22.7846154 C45.5692308,34.2635385 36.2635385,43.5692308 24.7846154,43.5692308 C13.3056923,43.5692308 4,34.2635385 4,22.7846154 C4,11.3056923 13.3056923,2 24.7846154,2 C36.2635385,2 45.5692308,11.3056923 45.5692308,22.7846154" id="Fill-1" fill="#FEFEFE"></path>
+                    <path d="M42.5862615,19.3606462 C42.5238,19.0364923 42.4214923,18.9675692 42.1134923,19.0828 C40.8750308,19.5458769 39.6365692,20.0121846 38.4002615,20.4838769 C37.7325692,20.7380308 37.0627231,20.9609538 36.3304154,20.8801846 C35.6918,20.8091077 35.1048769,20.5797231 34.5211846,20.3277231 C33.7253385,19.9831077 32.9219538,19.6546462 32.1293385,19.3024923 C31.5338,19.0386462 30.9242615,19.0558769 30.3007231,19.1398769 C29.5081077,19.2464923 28.7919538,19.5577231 28.0865692,19.9109538 C27.6105692,20.1489538 27.1334923,20.3858769 26.6445692,20.5926462 C25.7033385,20.9889538 24.7438,21.0104923 23.7928769,20.6271077 C23.0056462,20.3104923 22.2281077,19.9701846 21.4494923,19.6352615 C20.7828769,19.3477231 20.1044154,19.1054154 19.3742615,19.0526462 C18.5558,18.9934154 17.8105692,19.2529538 17.0879538,19.5954154 C16.5150308,19.8668 15.9507231,20.1554154 15.3767231,20.4246462 C14.0338,21.0535692 12.6908769,21.0223385 11.3544154,20.4009538 C10.7061077,20.0994154 10.0685692,19.7709538 9.41272308,19.4866462 C8.79887692,19.2217231 8.1538,19.0569538 7.47856923,19.0461846 C7.13933846,19.0408 7.03918462,19.1226462 6.97133846,19.4532615 C6.70426154,20.7584923 6.60841538,22.0734154 6.6698,23.4077231 C6.73441538,24.8077231 6.9078,26.1851077 7.28903077,27.5344923 C8.03210769,30.1729538 9.34595385,32.5034154 11.1358,34.5678769 C13.3661077,37.1384923 16.1510308,38.8755692 19.3559538,39.9611077 C20.4231846,40.3229538 21.5313385,40.4974154 22.6481077,40.6244923 C23.5893385,40.7321846 24.5316462,40.7817231 25.4793385,40.7375692 C28.1436462,40.6158769 30.6744154,39.9826462 33.0501077,38.7603385 C35.0402615,37.7361846 36.8021077,36.4126462 38.2807231,34.7272615 C40.3322615,32.3892615 41.7914923,29.7400308 42.4818,26.6901846 C42.7714923,25.4097231 42.9071846,24.1141846 42.9168769,22.7669538 C42.9018,21.6469538 42.8059538,20.4978769 42.5862615,19.3606462" id="Fill-3" fill="#49B0E4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

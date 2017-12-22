@@ -1,0 +1,74 @@
+<style type="text/css">
+.nav_root {
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    background: #fafafa;
+    box-shadow: 0 1px 2px #eee;
+    transition: background 0.5s;
+    transition: box-shadow 0.5s;
+    -moz-transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.nav_content {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo_bar {
+    display: inline-block;
+}
+
+.menu_bar {
+    display: inline-block;
+}
+
+.menu_mobile_bar {
+    display: none;
+}
+
+.menu_right_bar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+    .nav_content{
+        text-align: center;
+    }
+    .menu_bar{
+        display: none;
+    }
+    .logo_bar{
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .menu_mobile_bar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+    }
+    .menu_right_bar{
+    }
+}
+</style>
+{% load menu_tags %}
+<div class="nav_root">
+    <div class="nav_content">
+        <div class="menu_mobile_bar">{% include 'include/menu_mobile.html' %} </div>
+        <div class="logo_bar"> {% include 'include/logo.html' %} </div>
+        <div class="menu_bar">{% include 'include/menu.html' %} </div>
+        <div class="menu_right_bar">{% include 'include/menu_right.html' %} </div>
+    </div>
+</div>

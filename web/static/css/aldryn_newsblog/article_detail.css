@@ -1,0 +1,123 @@
+body{
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #818181;
+    font-weight: 400;
+    overflow-y: scroll;
+    overflow-x: hidden!important;
+    -webkit-font-smoothing: antialiased;
+}
+::selection {
+    background: #1abc9c;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, a, h1, h2, h3, h4, h5, h6, p a {
+    color: #303030;
+}
+.h2, .h3, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: 0;
+}
+.h5, .h6, h5, h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h2 {
+    display: block;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+h5 {
+    display: block;
+    font-size: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.571428571428571em;
+}
+.article_detail_root{
+    max-width:1200px;
+    margin:0 auto; 
+    text-align: center;
+}
+.article_head_img_div{
+}
+.article_title{
+    text-align: left;
+}
+.article_title h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3d4a9e;
+}
+.article_title h2 span{
+    color: #aaa;
+}
+.article_title_sub{
+    text-align: left;
+    color: #999;
+    margin-top: 10px;
+}
+.article_title_sub a{
+    color: #3d4a9e;
+}
+.article_content{
+    display: inline-block;
+/*    max-width: 800px;
+    min-height: 500px;*/
+    line-height: 2rem;
+    text-align: left;
+    margin-top: 3rem;
+}
+/*.article_content p{
+    font-family: Lora,'Times New Roman',serif;
+    font-size: 20px;
+    -webkit-tap-highlight-color: #0085A1;
+    color: #333;
+}*/
+.article_content img{
+    max-width: 800px;
+}
+.article_content a{
+    color: #3d4a9e;
+}
+.article_pager{
+    text-align: center;
+    padding: 10px;
+    margin: 50px 0;
+}
+.article_pager a{
+    color: #666;    
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.article_pager span{
+    color: #999;    
+    cursor: pointer;
+    font-size: 1rem;
+}
+.article_pager a:hover{
+    color:#3d4a9e;
+}
+
+@media (max-width: 767px) {
+    .article_pager{
+    text-align: center;
+}
+}

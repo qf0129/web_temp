@@ -1,0 +1,45 @@
+<style type="text/css">
+.menu_mobile_container {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.nav_menu_btn{
+    width: 50px;
+    height: 50px;
+    background: url(/static/img/common_icon_menu.svg) center no-repeat;
+    background-size: 16px 16px;
+}
+
+.nav_menu_ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    background: #fafafa;
+}
+
+.nav_menu_ul li{
+    border-bottom: 1px solid #eee;
+}
+
+.nav_menu_ul a {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    height: auto;
+    padding: 10px;
+}
+
+.nav_menu_ul a:hover {
+    color: #111;
+}
+
+</style>
+{% load menu_tags %}
+<div  class="menu_mobile_container">
+    <div onclick="$('.nav_menu_ul').toggle()"class="nav_menu_btn"></div>
+    <ul class="nav_menu_ul">
+        {% show_menu 0 100 100 100 %}
+    </ul>
+</div>
