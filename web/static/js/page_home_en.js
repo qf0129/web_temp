@@ -59,11 +59,14 @@ function init_img() {
     // $('.cup_function .fun .figure img').eq(3).attr("src","home_en_2-04.jpg");
     // $('.buy_link .left_img img').eq(0).attr("src","home_en_2-05.jpg");
 
+
+    set_image_src('.video_div_img', 'home_en_video_1.jpg');
+
     set_image_src('.slide_page .slice_img img', 'home_en_2-13.jpg');
-    set_image_src('.cup_function .fun .figure img:eq(0)', 'home_en_2-01.jpg');
-    set_image_src('.cup_function .fun .figure img:eq(1)', 'home_en_2-02.jpg');
-    set_image_src('.cup_function .fun .figure img:eq(2)', 'home_en_2-03.jpg');
-    set_image_src('.cup_function .fun .figure img:eq(3)', 'home_en_2-04.jpg');
+    set_image_src('.cup_function .figure img:eq(0)', 'home_en_2-01.jpg');
+    set_image_src('.cup_function .figure img:eq(1)', 'home_en_2-02.jpg');
+    set_image_src('.cup_function .figure img:eq(2)', 'home_en_2-03.jpg');
+    set_image_src('.cup_function .figure img:eq(3)', 'home_en_2-04.jpg');
     set_image_src('.buy_link .left_img img', 'home_en_2-05.jpg');
 
 
@@ -82,6 +85,9 @@ function init_img() {
     set_image_src('.img_2', 'home_en_2-07.jpg');
     set_image_src('.img_3', 'home_en_2-14.jpg');
 
+    set_background_img('.Buy_now', 'home_en_2-09.jpg');
+    set_background_img('.Urls', 'home_en_2-15.jpg');
+    set_background_img('.blue_bg', 'home_en_2-08.jpg');
 
     var img_class_normal = {".top_swiper_1":"home_en_1.jpg",
                             ".show_container":"home_img_3.jpg",
