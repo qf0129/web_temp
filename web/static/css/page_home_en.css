@@ -537,48 +537,67 @@
 }
 .figure .info{
     text-align: left;
-     font-weight: 500;
-     color: #555;
+    font-weight: 500;
+    color: #555;
+    font-size: 1.5em;
 }
 
 .buy_link{
     width: 80%;margin: 0 auto;
     padding-top: 20px;
+    height: 700px;
 }
 .buy_link .left_img{
-    display: inline-block;width: 45%;
+    display: inline-block;
+    height: 100%;
+    width: 48%;
 }
 .buy_link .left_img img{
-    display: block;width: 100%;
+    display: block; 
+    height: 100%;
+    width: 100%;
 }
 .buy_link .right_info{
-    text-align: center;display: inline-block;width: 50%;height: 100%;vertical-align: top;
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    vertical-align: top;
     color: #555;
+    text-align: center;
 }
 .buy_link .right_info>p{
-    margin-top: 5%;justify-content: center;
+    margin-top: 5%;
+    justify-content: center;
     font-size:2em;
 }
 .right_info .content_info{
-   margin-left:1em; text-align: left;font-size:1.5em;color: #666;font-weight: 500;
+    width: 60%;
+   text-align: left;
+   font-size:1.5em;
+   font-weight: 500;
+   color: #666;
+   margin: 0 auto;
 }
 .content_info p{
     margin: 1em auto;
 }
-.content_info .link_to_amazon{
-    display: inline-block;width: 100%;height: 2em;
-    border-radius: 20px;background: #f6b54d;text-align: center;
-    line-height: 2em;margin-bottom: 30px;
+.content_info .cup_price_value{
+    font-size: 1.5em;
 }
-
-@media (max-width: 900px){
-    .buy_link .right_info>p{
-        margin-top: 5%;justify-content: center;
-        font-size:1.4em;
-    }
-    .right_info .content_info{
-        width: 100%;text-align: left;font-size:1.2em;
-    }
+.content_info .link_to_amazon{
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+    border-radius: 20px;
+    background: #f6b54d;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: #333;
+}
+.content_info a{
+    text-decoration: none;
 }
 
 @media (max-width: 768px){
@@ -612,6 +631,10 @@
     .figure .title_ p{
         font-size: 1.2em;
     }
+    .buy_link{
+        height: 100%;
+        width: 100%;
+    }
     .buy_link .right_info>p{
         margin-top: 5%;justify-content: center;
         font-size:1.5em;
@@ -621,6 +644,7 @@
     }
     .content_info .mobile_cup_info{
         display: flex;
+        text-align: center;
     }
 
     .right_info .content_info{
@@ -633,13 +657,14 @@
         margin: 5% auto;
     }
     .mobile_cup_info .color_list,.mobile_cup_info .cup_price{
-        flex: 1;font-size: 0.7em;
+        flex: 1;font-size: 0.8em;
     }
     .mobile_cup_info .cup_price{
-        /* vertical-align: top;width: 55%; */text-align: center;
+        /* vertical-align: top;width: 55%; */
+        text-align: left;
     }
     .color_list p,.cup_price p{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     .color_list p{
         line-height: 2;
@@ -702,7 +727,7 @@
     text-align: center;
 }
 .cup_container{
-    overflow: hidden;
+    text-align: center;
 }
 .cup_container>h1{
     color: #595758;
@@ -712,14 +737,18 @@
     margin-bottom: 20px;
 }
 .cup_text{
-    font-size: 1.6em;
+    font-size: 2em;
     color: #515151;
     text-align: left;
     line-height: 1.5;
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    max-width: 500px;
 }
 .cup_img{
-    width: 40%;
-    display: block; 
+    width: 30%;
+    display: inline-block;
 }
 .img_1,.img_2,.img_3{
     width: 65%;
@@ -820,25 +849,28 @@
         width:90%;
     }
     .cup_container>h1{
-        font-size: 24px;
+        font-size: 2em;
         text-align: center;
     }
     .cup_text{
         width: 100%;
         margin: 0 auto;
+        display: block;
+        max-width: none;
+        font-size: 1.8em;
     }
     .cup_img{
         width: 70%;
         display: block;
-        margin-top: 25px;
+        margin: 0 auto;
     }
+
     .img_1,.img_2,.img_3{
         width: 90%;
         margin:20px auto;
     }
     .blue_bg{
         height: 100px;
-        background:url(../img/2-08.jpg) center center no-repeat;
         background-size: 100%;
     }
     .text{
