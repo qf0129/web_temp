@@ -46,11 +46,22 @@
 @media (max-width: 767px) {
     .footer_bar_container .footer_bar_wrapper{
         width: 100%;
-        padding: 0 0;
+        padding: 0;
+        display: block;
+    }
+    .footer_bar_wrapper_3{
+        display: none;
     }
     .footer_bar_container input{
-        margin-top: 20px;
+        margin-top: 1rem;
     }
+    .footer_logo{
+        margin-top: 0;
+    }
+    .footer_bar_bottom_wrapper{
+        padding:0 0 0.5rem 0;
+    }
+
 }
 
 </style>
@@ -70,7 +81,7 @@
                 </div>
                 <img class="footer_logo" src="/static/img/common_logo_2.svg">
         </div>
-        <div class="footer_bar_wrapper">
+        <div class="footer_bar_wrapper footer_bar_wrapper_3">
         </div>
     </div>
     <div class="footer_bar_bottom_wrapper">

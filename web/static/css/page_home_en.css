@@ -472,8 +472,11 @@
     width: 100%;
 }
 .video_div .video_div_img{
-    width: 43%;height: 50%;min-width: 300px;
-    margin: 50px auto 20px;border-radius: 20px;
+    width: 50%;
+    max-width: 800px;
+    margin: 2em auto;
+    border-radius: 20px;
+    cursor: pointer;
 }
 .video_div .video_info{
     font-size: 1.5em;
@@ -601,8 +604,11 @@
 }
 
 @media (max-width: 768px){
+    .video_div .video_div_img{
+        width: 80%;
+    }
     .slide_page{
-        width: 90%;
+        width: 100%;
     }
     .slide_content .p_app_text{
         display: block;
@@ -623,9 +629,10 @@
         font-size: 1.5em;
     }
     .cup_function .figure{
-        display: block;width: 80%;
+        display: block;
+        width: 100%;
         text-align: center;
-        margin: 0 auto 1em;
+        margin: 0 auto 2em;
     }
 
     .figure .title_ p{
@@ -740,7 +747,7 @@
     font-size: 2em;
     color: #515151;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.4em;
     display: inline-block;
     width: 65%;
     vertical-align: top;
@@ -758,30 +765,27 @@
 }
 .blue_bg{
     height: 200px;
-    background:url(../img/2-08.jpg) center center no-repeat;
     background-size: 100%;
 }
-.text{
+.blue_bg p{
     width: 60%;
     margin:0 auto;
-}
-.each_text{
     font-family: 'Dosis', sans-serif;
-    font-size: 21px;
-    width: 65%;
+    font-size: 1.5em;
     min-width: 65%;
-    line-height: 2;
     color: #585657;
+    margin-top: 1em;
 }
 .Urls{
-    width: 70%;
-    height: 300px;
-    margin:30px auto;
-    background-size: 100%; 
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 1em auto;
 }
 .Buy_now{
     position: relative;
     background-size: 100%;
+    padding: 2em 0;
 }
 .return_top{
     position: absolute;
@@ -849,7 +853,7 @@
         width:90%;
     }
     .cup_container>h1{
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
     }
     .cup_text{
@@ -857,7 +861,8 @@
         margin: 0 auto;
         display: block;
         max-width: none;
-        font-size: 1.8em;
+        font-size: 1.3em;
+        line-height: 1.2em;
     }
     .cup_img{
         width: 70%;
@@ -869,22 +874,10 @@
         width: 90%;
         margin:20px auto;
     }
-    .blue_bg{
-        height: 100px;
-        background-size: 100%;
-    }
-    .text{
-        width: 90%;
-    }
-    .each_text{
-        min-width: 85%;
-        line-height: 1;
-        font-size: 12px;
-    }
-    .Urls{
-        width: 90%;
-        height: 100px;
-        margin: 0 auto 20px;
+    .blue_bg p{
+        font-size: 1em;
+        width: 80%;
+        margin-top: 2em;
     }
     .Buy_now{
         position: relative;

@@ -55,22 +55,22 @@
         vertical-align: top;
     }
     .menu_mobile_bar{
-        float: left;
+        position: absolute;
+        left: 0;
+        top: 0;
         text-align: left;
         display: inline-block;
-    }
-    .menu_right_bar{
-        display: none;
+        width: 100%;
     }
 }
 </style>
 {% load menu_tags %}
 <div class="nav_root">
     <div class="nav_content">
+        <div class="menu_mobile_bar">{% include 'include/menu_mobile.html' %} </div>
         <div class="logo_bar"> {% include 'include/logo.html' %} </div>
         <div class="menu_bar">{% include 'include/menu_en.html' %} </div>
         <div class="lang_bar_top"> {% include 'include/lang_en.html' %} </div>
-        <div class="menu_mobile_bar">{% include 'include/menu_mobile.html' %} </div>
         <div class="menu_right_bar">{% include 'include/menu_right.html' %} </div>
     </div>
 </div>
